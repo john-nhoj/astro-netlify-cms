@@ -3,14 +3,11 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/admin/*"
+  from = "/admin/#/*"
+  to = "/admin/#/*"
   status = 200
   conditions = {Role = ["admin"]}
-
-[[redirects]]
-  from = "/admin/*"
-  to = "/login"
-  status = 401
+  force = true
 
 [dev]
   autoLaunch = false
