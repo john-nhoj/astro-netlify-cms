@@ -3,8 +3,8 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/admin/#/*"
-  to = "/admin/#/*"
+  from = "/admin/*"
+  to = "/admin/*"
   status = 200
   conditions = {Role = ["admin"]}
   force = true
