@@ -88,18 +88,5 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
         </section>
       </main>
     </div>
-    <footer>
-      <script>
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on('init', (user) => {
-            if (!user) {
-              window.netlifyIdentity.on('login', () => {
-                document.location.href = '/admin/';
-              });
-            }
-          });
-        }
-      </script>
-    </footer>
   </body>
 </html>
