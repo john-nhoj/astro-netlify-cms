@@ -9,5 +9,11 @@
   conditions = {Role = ["admin"]}
   force = true
 
+[[redirects]]
+  from = "/admin/*"
+  to = "/login"
+  status = 401
+  force = true
+
 [dev]
   autoLaunch = false
